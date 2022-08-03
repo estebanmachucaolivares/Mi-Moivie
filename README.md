@@ -43,3 +43,5 @@ Vista Previa de listas de Peliculas
 Detalle de Peliculas
 
 [![Screenshot-20220803-104102-Mi-Movie.jpg](https://i.postimg.cc/j207PB4J/Screenshot-20220803-104102-Mi-Movie.jpg)](https://postimg.cc/PpyJk3ct)
+
+[![Alt text](https://img.youtube.com/vi/ YzVGmV7KlVo/0.jpg)](https://www.youtube.com/watch?v= YzVGmV7KlVo)
