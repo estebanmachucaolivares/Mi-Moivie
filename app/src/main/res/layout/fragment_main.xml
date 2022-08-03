@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".domain.ui.mainactivity.fragment.MainFragment"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Populares"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_movies_popular"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:listitem="@layout/item_movie"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mejor Evaluadas"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_movies_top_rated"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:listitem="@layout/item_movie"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proximo Estrenos"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_movies_upcoming"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:listitem="@layout/item_movie"
+        />
+
+</LinearLayout>
