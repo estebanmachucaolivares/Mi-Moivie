@@ -28,14 +28,18 @@
 ## Imagenes de App
 
 SplashScreen
+
 [![Screenshot-20220803-035935-Mi-Movie.jpg](https://i.postimg.cc/RVx0CSNm/Screenshot-20220803-035935-Mi-Movie.jpg)](https://postimg.cc/PNKH2kWV)
 
 
 Carga de Información
+
 [![Screenshot-20220803-103926-Mi-Movie.jpg](https://i.postimg.cc/wTnQjsDv/Screenshot-20220803-103926-Mi-Movie.jpg)](https://postimg.cc/crMnDC9y)
 
 Vista Previa de listas de Peliculas
+
 [![Screenshot-20220803-103940-Mi-Movie.jpg](https://i.postimg.cc/50ZwpXby/Screenshot-20220803-103940-Mi-Movie.jpg)](https://postimg.cc/sQ4QgDBC)
 
 Detalle de Peliculas
+
 [![Screenshot-20220803-104102-Mi-Movie.jpg](https://i.postimg.cc/j207PB4J/Screenshot-20220803-104102-Mi-Movie.jpg)](https://postimg.cc/PpyJk3ct)
