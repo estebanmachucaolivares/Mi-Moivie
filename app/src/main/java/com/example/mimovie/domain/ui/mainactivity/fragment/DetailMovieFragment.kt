@@ -42,7 +42,7 @@ class DetailMovieFragment : Fragment() {
                 binding.tvTitle.text = it.title
                 binding.tvOverview.text = it.overview
                 binding.tvOriginalLanguage.text="Idioma ${it.originalLanguage}"
-                binding.tvReleaseDate.text=it.releaseDate
+                binding.tvReleaseDate.text="Estreno ${it.releaseDate}"
                 binding.tvVoteAverageCount.text="${it.voteAverage} (${it.voteCount} Reseñas)"
 
                 Glide.with(requireContext())

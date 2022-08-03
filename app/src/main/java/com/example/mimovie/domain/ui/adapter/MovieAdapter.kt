@@ -36,7 +36,7 @@ class MovieAdapter(private val moviesList:List<Movie>, private val onClickListen
 
             Glide.with(binding.ivMovie.context)
                 .applyDefaultRequestOptions(RequestOptions()
-                    .placeholder(R.drawable.default_poster)
+                    //.placeholder(R.drawable.default_poster)
                     .error(R.drawable.default_poster))
                 .load(path+movie.posterPath)
                 .into(binding.ivMovie)

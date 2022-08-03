@@ -18,7 +18,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        //Simular tiempo de respuesta
         Thread.sleep(2000)
+
         setTheme(R.style.Theme_MiMovie);
         super.onCreate(savedInstanceState)
 

@@ -7,8 +7,8 @@
     <string name="compartir">Compartir</string>
     <string name="resumen">Resumen</string>
     <string name="populares">Populares</string>
-    <string name="mejor_evaluadas">Mejor Evaluadas</string>
-    <string name="proximo_estrenos">Proximo Estrenos</string>
+    <string name="mejor_evaluadas">Mejor valoradas</string>
+    <string name="proximo_estrenos">Próximos estrenos</string>
     <string name="esteban_machuca">Esteban Machuca</string>
     <string name="path_image">https://image.tmdb.org/t/p/w500/</string>
 </resources>
