@@ -12,6 +12,7 @@
     En el proyecto se utiliza:
         •	Lenguaje de programación Kotlin versión 1.5.30
         •	Patrón de desarrollo MVVM
+        •   Información listada en ReciclerView
         •	ViewModel y LiveData versión 2.5.0-alpha06
         •	Clean Architecture
         •	Persistencia de datos con SQLite y ORM Room versión 2.4.2
@@ -21,3 +22,6 @@
         •	Fragment Navigation versión 2.4.2
         •	Librería Glide para carga de imágenes versión 4.13.2
         •	Animaciones con lottie animation versión 5.0.3
+
+    Compilación
+        •  compileSdk 31
