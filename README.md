@@ -44,4 +44,5 @@ Detalle de Peliculas
 
 [![Screenshot-20220803-104102-Mi-Movie.jpg](https://i.postimg.cc/j207PB4J/Screenshot-20220803-104102-Mi-Movie.jpg)](https://postimg.cc/PpyJk3ct)
 
-[![Alt text](https://img.youtube.com/vi/ YzVGmV7KlVo/0.jpg)](https://www.youtube.com/shorts?v= YzVGmV7KlVo)
+[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
+
