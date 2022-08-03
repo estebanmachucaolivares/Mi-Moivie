@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -37,16 +38,23 @@ class MainFragment : Fragment() {
 
         moviesViewModel.onCreate();
 
+        init()
+    }
+
+    private fun init(){
         moviesViewModel.isLoadingPopularMovie.observe(viewLifecycleOwner) {
-            Log.e("TAG", "isLoadingPopularMovie $it")
+            binding.loaderMoviesPopular.isVisible=it
+            binding.rvMoviesPopular.isVisible=!it
         }
 
         moviesViewModel.isLoadingTopRatedMovie.observe(viewLifecycleOwner) {
-            Log.e("TAG", "isLoadingTopRatedMovie $it")
+            binding.loaderMoviesTopRated.isVisible=it
+            binding.rvMoviesTopRated.isVisible=!it
         }
 
         moviesViewModel.isLoadingUpComingMovie.observe(viewLifecycleOwner) {
-            Log.e("TAG", "isLoadingUpComingMovie $it")
+            binding.loaderMoviesUpcoming.isVisible=it
+            binding.rvMoviesUpcoming.isVisible=!it
         }
 
         binding.rvMoviesPopular.layoutManager = LinearLayoutManager(activity,LinearLayoutManager.HORIZONTAL,false)
@@ -65,7 +73,6 @@ class MainFragment : Fragment() {
         moviesViewModel.allUpComingMovie.observe(viewLifecycleOwner)  {
             binding.rvMoviesUpcoming.adapter = MovieAdapter(it) { movie -> onItemSelected(movie) }
         }
-
     }
 
     override fun onDestroyView() {

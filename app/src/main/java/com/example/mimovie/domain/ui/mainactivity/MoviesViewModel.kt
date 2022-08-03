@@ -41,7 +41,7 @@ class MoviesViewModel @Inject constructor(
     val isLoadingUpComingMovie:LiveData<Boolean> = isLoadingUpComingMovieP
 
     private var movieP=MutableLiveData<Movie>()
-    private var movie:LiveData<Movie> = movieP
+    val movie:LiveData<Movie> = movieP
 
 
     fun onCreate(){

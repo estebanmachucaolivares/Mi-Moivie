@@ -13,8 +13,9 @@ data class Movie(
     val overview:String,
     val backdropPath:String,
     val posterPath:String,
-    var category:String?="POPULAR"
+    var category:String?="POPULAR",
+    val voteCount:String
 )
 
-fun MovieModel.toDomain()=Movie(id,title,voteAverage,releaseDate,originalLanguage,overview,backdropPath,posterPath,category)
-fun MovieEntity.toDomain()=Movie(id,title,voteAverage,releaseDate,originalLanguage,overview,backdropPath,posterPath,category)
+fun MovieModel.toDomain()=Movie(id,title,voteAverage,releaseDate,originalLanguage,overview,backdropPath,posterPath,category,voteCount)
+fun MovieEntity.toDomain()=Movie(id,title,voteAverage,releaseDate,originalLanguage,overview,backdropPath,posterPath,category,voteCount)

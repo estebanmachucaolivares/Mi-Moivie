@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.example.mimovie.R
 import com.example.mimovie.databinding.ItemMovieBinding
 import com.example.mimovie.domain.model.Movie
@@ -33,7 +34,12 @@ class MovieAdapter(private val moviesList:List<Movie>, private val onClickListen
 
         fun render(movie:Movie,onClickListener:(Movie)->Unit){
 
-            Glide.with(binding.ivMovie.context).load(path+movie.posterPath).into(binding.ivMovie)
+            Glide.with(binding.ivMovie.context)
+                .applyDefaultRequestOptions(RequestOptions()
+                    .placeholder(R.drawable.default_poster)
+                    .error(R.drawable.default_poster))
+                .load(path+movie.posterPath)
+                .into(binding.ivMovie)
             itemView.setOnClickListener { onClickListener(movie) }
         }
     }
