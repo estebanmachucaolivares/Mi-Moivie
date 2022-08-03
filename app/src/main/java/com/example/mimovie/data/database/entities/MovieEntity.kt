@@ -16,7 +16,7 @@ data class MovieEntity(
     @ColumnInfo(name ="overview") val overview:String,
     @ColumnInfo(name ="backdrop_path") val backdropPath:String,
     @ColumnInfo(name ="poster_path") val posterPath:String,
-    @ColumnInfo(name ="category") val category:String?="POPULAR",
+    @ColumnInfo(name ="category") val category:String?="popular",
     @ColumnInfo(name ="vote_count") val voteCount:String
 )
 

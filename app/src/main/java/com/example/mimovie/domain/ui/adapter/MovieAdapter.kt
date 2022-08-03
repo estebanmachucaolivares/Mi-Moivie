@@ -30,7 +30,7 @@ class MovieAdapter(private val moviesList:List<Movie>, private val onClickListen
 
     class MovieViewHolder(view: View):RecyclerView.ViewHolder(view) {
         val binding=ItemMovieBinding.bind(view)
-        private val path="https://image.tmdb.org/t/p/w500/"
+        private val path=view.context.getString(R.string.path_image)
 
         fun render(movie:Movie,onClickListener:(Movie)->Unit){
 

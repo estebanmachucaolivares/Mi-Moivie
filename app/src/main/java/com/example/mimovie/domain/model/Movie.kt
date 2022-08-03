@@ -13,7 +13,7 @@ data class Movie(
     val overview:String,
     val backdropPath:String,
     val posterPath:String,
-    var category:String?="POPULAR",
+    var category:String?="popular",
     val voteCount:String
 )
 

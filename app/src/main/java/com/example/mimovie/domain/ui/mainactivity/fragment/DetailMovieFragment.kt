@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import com.bumptech.glide.Glide
@@ -60,10 +61,11 @@ class DetailMovieFragment : Fragment() {
                     .load(path+it.backdropPath)
                     .into(binding.ivMovieBackground)
             }
-
-
-
         })
+        
+        binding.cvGuardar.setOnClickListener { Toast.makeText(requireContext(), getString(R.string.guardar), Toast.LENGTH_SHORT).show() }
+        binding.cvCompartir.setOnClickListener { Toast.makeText(requireContext(), getString(R.string.compartir), Toast.LENGTH_SHORT).show() }
+        binding.cvFavorito.setOnClickListener { Toast.makeText(requireContext(), getString(R.string.favorito), Toast.LENGTH_SHORT).show() }
     }
 
 }

@@ -6,88 +6,109 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".domain.ui.mainactivity.fragment.MainFragment"
     android:background="@color/primary">
-
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Populares"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="15dp"
-            android:textStyle="bold"/>
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_movies_popular"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            tools:listitem="@layout/item_movie"
-            android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/populares"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/loader_movies_popular"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:visibility="visible"
-            app:lottie_rawRes="@raw/loader"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_movies_popular"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                tools:listitem="@layout/item_movie" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/loader_movies_popular"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:visibility="visible"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/loader" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/mejor_evaluadas"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_movies_top_rated"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                tools:listitem="@layout/item_movie" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/loader_movies_top_rated"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:visibility="visible"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/loader" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/proximo_estrenos"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_movies_upcoming"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                tools:listitem="@layout/item_movie" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/loader_movies_upcoming"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:visibility="visible"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/loader" />
+
+        </LinearLayout>
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mejor Evaluadas"
+            android:text="@string/esteban_machuca"
+            android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="20dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="15dp"
-            android:textStyle="bold"/>
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_movies_top_rated"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            tools:listitem="@layout/item_movie"
-            android:visibility="gone"
-            />
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/loader_movies_top_rated"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:visibility="visible"
-            app:lottie_rawRes="@raw/loader"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            />
+            android:textSize="11sp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Proximo Estrenos"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="15dp"
-            android:textStyle="bold"/>
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_movies_upcoming"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            tools:listitem="@layout/item_movie"
-            android:visibility="gone"
-            />
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/loader_movies_upcoming"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:visibility="visible"
-            app:lottie_rawRes="@raw/loader"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            />
-
-    </LinearLayout>
 </ScrollView>
