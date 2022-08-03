@@ -25,7 +25,7 @@
 
     Compilación
         •  compileSdk 31
-## Imagenes de App
+## Vista Previa de App
 
 SplashScreen
 
@@ -39,13 +39,13 @@ Carga de Información
 
 
 
-Vista Previa de listas de Peliculas
+Listas de Películas
 
 [![Screenshot-20220803-103940-Mi-Movie.jpg](https://i.postimg.cc/50ZwpXby/Screenshot-20220803-103940-Mi-Movie.jpg)](https://postimg.cc/sQ4QgDBC)
 
 
 
-Detalle de Peliculas
+Detalle de Películas
 
 [![Screenshot-20220803-104102-Mi-Movie.jpg](https://i.postimg.cc/j207PB4J/Screenshot-20220803-104102-Mi-Movie.jpg)](https://postimg.cc/PpyJk3ct)
 
