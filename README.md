@@ -18,7 +18,7 @@
         •	Persistencia de datos con SQLite y ORM Room versión 2.4.2
         •	Inyección de dependencias con dagger hilt versión 2.41
         •	Corrutinas versión 1.6.0
-        •	Peticiones HTTP con Retrofir 2 versión 2.41
+        •	Peticiones HTTP con Retrofit 2 versión 2.41
         •	Fragment Navigation versión 2.4.2
         •	Librería Glide para carga de imágenes versión 4.13.2
         •	Animaciones con lottie animation versión 5.0.3
