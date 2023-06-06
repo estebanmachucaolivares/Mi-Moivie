@@ -1,6 +1,6 @@
 ## Desarrollador Esteban Machuca
 
-## Prueba técnica para SII Group
+## Sobre la App
     Aplicación para mostrar películas Populares, Mejor evaluadas y próximos estrenos.
     Al seleccionar cada película mostrará detalles cómo, titulo, evaluación, fecha de estreno, idioma original y resumen.
 
